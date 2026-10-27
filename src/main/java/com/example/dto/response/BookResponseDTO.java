@@ -1,10 +1,20 @@
 package com.example.dto.response;
-import lombok.Getter;
-import lombok.Setter;
+
+import lombok.Data;
+
 import java.time.LocalDate;
-@Getter @Setter
+
+@Data
 public class BookResponseDTO {
-    private Long id; private String name; private String author; private Integer quantity;
-    private Integer pageCount; private LocalDate publishDate; private String username;
-    private Double price; private String barcode; private String imageUrl;
+    private Long id;
+    private String name;
+    private String author;
+    private Integer quantity;
+    private Integer pageCount;
+    private LocalDate publishDate;
+    private String username;
+    private Double price;
+    private String barcode;
+    private String imageUrl;
+    private String createdBy;
 }
